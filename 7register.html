@@ -1,0 +1,27 @@
+<html>
+<head><title>Registration page</title></head>
+<script language=javascript>
+function validate()
+{
+	if(document.registrationform.name.value==""||document.registrationform.email.value=="" ||document.registrationform.phno.value==""||document.registrationform.newpwd.value==""||document.registrationform.conpwd.value==""||document.registrationform.gender.value=="")
+	{
+		alert("Fill complete form");
+		return false;
+	}
+}
+</script>
+<body bgcolor=#eedd82 ><center>
+<h2> Registration form </h2> </center>
+<form name="registrationform" onsubmit="return validate()" action="7login.html">
+Name: <input type="text" name="name"> <br><br>
+Email id: <input type="text" name="email"> <br><br>
+Phone no.: <input type="text" size="10" name="phno"> <br><br>
+Create password: <input type="password" name="newpwd"> <br><br>
+Confirm password: <input type="password" name="conpwd"> <br><br>
+Gender: <input type="radio" name= "gender" value="m">Male
+<input type="radio" name= "gender" value="f">Female <br><br>
+<input type="submit" value="CREATE">
+<input type="reset" value="RESET">
+</form>
+</body>
+</html>

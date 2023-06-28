@@ -1,0 +1,22 @@
+<html>
+<head> <title> Login page </title> </head>
+<script language="javascript">
+function validate()
+{
+if(document.loginform.username.value==""||document.loginform.userpwd.value=="")
+	{
+		alert("Enter User name or Password");
+		return false;
+	}
+}
+</script>
+<body bgcolor="#eedd82"><center> <br><br><br>
+<h2>Enter your Login Details</h2> <br><br> 
+<form name="loginform" onsubmit="return validate()" action="7profile.html">
+Username: <input type="text" name="username"></input> <br><br>
+Password: <input type="password" name="userpwd"></input> <br><br><br>
+<input type="submit" value="LOGIN" ></input>
+<input type="reset" value="RESET">
+</form>
+</body>
+</html>
